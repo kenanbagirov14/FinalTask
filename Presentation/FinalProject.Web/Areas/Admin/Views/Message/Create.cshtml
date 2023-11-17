@@ -1,0 +1,25 @@
+﻿@model MessageAddDTO
+
+<div class="card-body">
+    <div class="container">
+        <form asp-area="Admin" asp-controller="Message" asp-action="Create" method="post" enctype="" class="form-group">
+            <input type="hidden" value="@Model.IsView" />
+            <div class="row">
+                <div class="col-6">
+                    <span>Email</span>
+                    <input  type="text" name="Email" class="form-control" value="@Model.Email" />
+                </div>
+                <div class="col-6">
+                    <span>Name</span>
+                    <input type="text" name="Name" class="form-control" value="@Model.Name" />
+                </div>
+                <div class="col-12">
+                    <span>Text</span>
+                    <textarea class="form-control" rows="10" name="Text">@Model.Text</textarea>
+
+                </div>
+                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

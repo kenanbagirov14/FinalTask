@@ -1,0 +1,32 @@
+﻿@model GroupUpdateDTO
+
+<div class="card-body">
+    <div class="container">
+        <form asp-area="Admin" asp-controller="Group" asp-action="Update" method="post" enctype="" class="form-group">
+            <input type="hidden" name="Id" class="form-control" value="@Model.Id" />
+            <div class="row">
+                <div class="col-6">
+                    <span>Group name</span>
+                    <input type="text" name="GroupName" class="form-control" value="@Model.GroupName" />
+                    <span asp-validation-for="@Model.GroupName" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Teacher</span>
+                    @await Component.InvokeAsync("SelectBox",Model.TeacherId)
+                    <span asp-validation-for="@Model.TeacherId" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Minimum age</span>
+                    <input type="number" name="MinAge" class="form-control" value="@Model.MinAge" />
+                    <span asp-validation-for="@Model.MinAge" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Maximum age</span>
+                    <input type="text" name="MaxAge" class="form-control" value="@Model.MaxAge" />
+                    <span asp-validation-for="@Model.MaxAge" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

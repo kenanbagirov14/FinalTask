@@ -1,0 +1,142 @@
+﻿@model SettingAddDTO
+
+<div class="card-body">
+    <div class="container">
+        <form asp-area="Admin" asp-controller="Setting" asp-action="CreateOrUpdate" method="post" enctype="multipart/form-data" class="form-group">
+            <input type="hidden" name="Id" class="form-control" value="@Model.Id" />
+            <input type="hidden" name="SlideImagePath" class="form-control" value="@Model.SlideImagePath" />
+            <input type="hidden" name="SlideImageFullPath" class="form-control" value="@Model.SlideImageFullPath" />
+            <input type="hidden" name="LogoImagePath" class="form-control" value="@Model.LogoImagePath" />
+            <input type="hidden" name="LogoImageFullPath" class="form-control" value="@Model.LogoImageFullPath" />
+
+            <input type="hidden" name="WhyUsImagePath" class="form-control" value="@Model.WhyUsImagePath" />
+            <input type="hidden" name="WhyUsFullImagePath" class="form-control" value="@Model.WhyUsFullImagePath" />
+
+            <input type="hidden" name="WhyUsImagePath1" class="form-control" value="@Model.WhyUsImagePath1" />
+            <input type="hidden" name="WhyUsFullImagePath1" class="form-control" value="@Model.WhyUsFullImagePath1" />
+
+            <input type="hidden" name="WhyUsImagePath2" class="form-control" value="@Model.WhyUsImagePath2" />
+            <input type="hidden" name="WhyUsFullImagePath2" class="form-control" value="@Model.WhyUsFullImagePath2" />
+            <div class="row">
+                <div class="col-4">
+                    <span> SlideBigText</span>
+                    <input type="text" name="SlideBigText" class="form-control" value="@Model.SlideBigText" />
+                    <span asp-validation-for="@Model.SlideBigText" class="text-danger"></span>
+                </div>
+                <div class="col-4">
+                    <span>SlideSmallText</span>
+                    <input type="text" name="SlideSmallText" class="form-control" value="@Model.SlideSmallText" />
+                    <span asp-validation-for="@Model.SlideSmallText" class="text-danger"></span>
+                </div>
+                <div class="col-4">
+                    <span> SlideImage</span>
+                    <input type="file" name="SlideImage" class="form-control" value="@Model.SlideImage" />
+                    <span asp-validation-for="@Model.SlideImage" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Tittle</span>
+                    <input type="text" name="Tittle" class="form-control" value="@Model.Tittle" />
+                    <span asp-validation-for="@Model.Tittle" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Logo Image</span>
+                    <input type="file" name="LogoImage" class="form-control" value="@Model.LogoImage" />
+                    <span asp-validation-for="@Model.LogoImage" class="text-danger"></span>
+                </div>
+                <div class="col-3">
+                    <span>Email</span>
+                    <input type="email" name="Email" class="form-control" value="@Model.Email" />
+                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                </div>
+                <div class="col-3">
+                    <span>FaceBook</span>
+                    <input type="text" name="Facebook" class="form-control" value="@Model.Facebook" />
+                    <span asp-validation-for="@Model.Facebook" class="text-danger"></span>
+                </div>
+                <div class="col-3">
+                    <span>Instagram</span>
+                    <input type="text" name="Instagram" class="form-control" value="@Model.Instagram" />
+                    <span asp-validation-for="@Model.Instagram" class="text-danger"></span>
+                </div>
+                <div class="col-3">
+                    <span>Youtube</span>
+                    <input type="text" name="Youtube" class="form-control" value="@Model.Youtube" />
+                    <span asp-validation-for="@Model.Youtube" class="text-danger"></span>
+                </div>
+
+                <div class="col-6">
+                    <span>Fax</span>
+                    <input type="text" name="Fax" class="form-control" value="@Model.Fax" />
+                    <span asp-validation-for="@Model.Fax" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Phone Number</span>
+                    <input type="text" name="PhoneNumber" class="form-control" value="@Model.PhoneNumber" />
+                    <span asp-validation-for="@Model.PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    <span>About Text</span>
+                    <span asp-validation-for="@Model.AboutText" class="text-danger"></span>
+                    <textarea rows="12" name="AboutText" class="form-control">@Model.AboutText</textarea>
+                </div>
+
+                <div class="col-6">
+                    <span>Why Us Tittle</span>
+                    <input type="text" name="WhyUsTittle" class="form-control" value="@Model.WhyUsTittle" />
+                    <span asp-validation-for="@Model.WhyUsTittle" class="text-danger"></span>
+                </div>
+
+                <div class="col-6">
+                    <span>Why Us Image</span>
+                    <input type="file" name="WhyUseImage" class="form-control" value="@Model.WhyUseImage" />
+                    <span asp-validation-for="@Model.WhyUseImage" class="text-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    <span>Why Us text</span>
+                    <span asp-validation-for="@Model.WhyUsText" class="text-danger"></span>
+                    <textarea rows="12" name="WhyUsText" class="form-control">@Model.WhyUsText</textarea>
+                </div>
+
+                <div class="col-6">
+                    <span>Why Us Tittle1</span>
+                    <input type="text" name="WhyUsTittle1" class="form-control" value="@Model.WhyUsTittle1" />
+                    <span asp-validation-for="@Model.WhyUsTittle1" class="text-danger"></span>
+                </div>
+
+                <div class="col-6">
+                    <span>Why Us Image1</span>
+                    <input type="file" name="WhyUseImage1" class="form-control" value="@Model.WhyUseImage1" />
+                    <span asp-validation-for="@Model.WhyUseImage1" class="text-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    <span>Why Us text1</span>
+                    <span asp-validation-for="@Model.WhyUsText1" class="text-danger"></span>
+                    <textarea rows="12" name="WhyUsText1" class="form-control">@Model.WhyUsText1</textarea>
+                </div>
+
+                <div class="col-6">
+                    <span>Why Us Tittle2</span>
+                    <input type="text" name="WhyUsTittle2" class="form-control" value="@Model.WhyUsTittle2" />
+                    <span asp-validation-for="@Model.WhyUsTittle2" class="text-danger"></span>
+                </div>
+
+                <div class="col-6">
+                    <span>Why Us Image2</span>
+                    <input type="file" name="WhyUseImage2" class="form-control" value="@Model.WhyUseImage2" />
+                    <span asp-validation-for="@Model.WhyUseImage2" class="text-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    <span>Why Us text2</span>
+                    <span asp-validation-for="@Model.WhyUsText2" class="text-danger"></span>
+                    <textarea rows="12" name="WhyUsText2" class="form-control">@Model.WhyUsText2</textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

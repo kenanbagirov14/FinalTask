@@ -1,0 +1,37 @@
+﻿@model StudentAddDTO
+
+<div class="card-body">
+    <div class="container">
+        <form asp-area="Admin" asp-controller="Student" asp-action="Create" method="post" enctype="multipart/form-data" class="form-group">
+            <div class="row">
+                <div class="col-6">
+                    <span> Name</span>
+                    <input type="text" name="Name" class="form-control" value="@Model.Name" />
+                    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span> Surname</span>
+                    <input type="text" name="Surname" class="form-control" value="@Model.Surname" />
+                    <span asp-validation-for="@Model.Surname" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Teacher</span>
+                    @await Component.InvokeAsync("GroupSelectBox",Model.GroupId)
+                    <span asp-validation-for="@Model.GroupId" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Birthdate</span>
+                    <input type="date" name="Birthdate" class="form-control" value="@Model.BirthDate" />
+                    <span asp-validation-for="@Model.BirthDate" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <span>Select file</span>
+                    <input type="file" name="File" class="form-control" value="@Model.File" />
+                    <span asp-validation-for="@Model.File" class="text-danger"></span>
+                </div>
+               
+                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

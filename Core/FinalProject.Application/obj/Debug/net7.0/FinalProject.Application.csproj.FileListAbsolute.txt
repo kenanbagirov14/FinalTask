@@ -1,0 +1,15 @@
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\bin\Debug\net7.0\FinalProject.Application.deps.json
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\bin\Debug\net7.0\FinalProject.Application.dll
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\bin\Debug\net7.0\FinalProject.Application.pdb
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.AssemblyInfo.cs
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.dll
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\refint\FinalProject.Application.dll
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.pdb
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\ref\FinalProject.Application.dll
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\bin\Debug\net7.0\FinalProject.Domain.dll
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\bin\Debug\net7.0\FinalProject.Domain.pdb
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Application\obj\Debug\net7.0\FinalProject.Application.csproj.CopyComplete

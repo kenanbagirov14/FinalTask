@@ -1,0 +1,20 @@
+﻿@model IEnumerable<SelectListItem>
+<select class="form-control" name="GroupId">
+    @{
+        foreach (var item in Model)
+        {
+            if (int.Parse(item.Value) == ViewData["selectedValue"] as int?)
+            {
+                <option selected value="@int.Parse(item.Value)">@item.Text</option>
+            }
+            else
+            {
+                <option value="@int.Parse(item.Value)">@item.Text</option>  
+            }
+
+        }
+    }
+</select>
+
+
+

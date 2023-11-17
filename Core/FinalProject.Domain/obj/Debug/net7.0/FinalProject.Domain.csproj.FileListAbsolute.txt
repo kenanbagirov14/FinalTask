@@ -1,0 +1,11 @@
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\bin\Debug\net7.0\FinalProject.Domain.deps.json
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\bin\Debug\net7.0\FinalProject.Domain.dll
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\bin\Debug\net7.0\FinalProject.Domain.pdb
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.AssemblyInfo.cs
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.dll
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\obj\Debug\net7.0\refint\FinalProject.Domain.dll
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\obj\Debug\net7.0\FinalProject.Domain.pdb
+C:\Users\admin\Desktop\CAVID\Final\FinalProject\Core\FinalProject.Domain\obj\Debug\net7.0\ref\FinalProject.Domain.dll
