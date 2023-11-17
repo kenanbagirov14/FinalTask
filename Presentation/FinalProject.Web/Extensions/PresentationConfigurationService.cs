@@ -15,6 +15,7 @@ namespace FinalProject.Web.Extensions
             services.AddScoped<MessageServiceFacade>();
             services.AddScoped<SettingServiceFacade>();
             services.AddScoped<HomeserviceFacade>();
+            services.AddScoped<LoginServiceFacade>();
             services.AddHttpContextAccessor();
             return services;
         }

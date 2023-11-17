@@ -31,24 +31,20 @@ namespace FinalProject.Web.Areas.Admin.ServiceFacades
             }
         }
 
-        public async Task<Tuple<bool,string>> Registr(UserAddDTO user)
+        public async Task<Tuple<bool, string>> Registr(UserAddDTO user)
         {
             var sb = new StringBuilder();
             var registrResult = await _userService.AddAsync(user);
+            bool result = false;
             switch (registrResult)
             {
-                case 0: sb.AppendLine("User model is null"); break;
-                case 2: sb.AppendLine("Username is exist") ; break;
-                case 3: sb.AppendLine("Password confirmation is incorrect") ; break;
+                case 0: result = false; sb.AppendLine("User model is null"); break;
+                case 1: result = true; sb.AppendLine("Success"); break;
+                case 2: result = false; sb.AppendLine("Username is exist"); break;
+                case 3: result = false; sb.AppendLine("Password confirmation is incorrect"); break;
             }
-            if (registrResult!=1)
-            {
-                return Tuple.Create(false, sb.ToString());
-            }
-            else
-            {
-                return Tuple.Create(true,"");
-            }
+
+            return Tuple.Create(result, sb.ToString());
         }
     }
 }

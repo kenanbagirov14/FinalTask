@@ -3099,28 +3099,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Presentation\\FinalProject.Web\\FinalProject.Web.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Presentation\\FinalProject.Web\\FinalProject.Web.csproj",
       "projectName": "FinalProject.Web",
-      "projectPath": "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Presentation\\FinalProject.Web\\FinalProject.Web.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Presentation\\FinalProject.Web\\obj\\",
+      "projectPath": "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Presentation\\FinalProject.Web\\FinalProject.Web.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Presentation\\FinalProject.Web\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3133,14 +3125,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Core\\FinalProject.Application\\FinalProject.Application.csproj": {
-              "projectPath": "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Core\\FinalProject.Application\\FinalProject.Application.csproj"
+            "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Core\\FinalProject.Application\\FinalProject.Application.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Core\\FinalProject.Application\\FinalProject.Application.csproj"
             },
-            "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Infrastructure\\FinalProject.Infrastructure\\FinalProject.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Infrastructure\\FinalProject.Infrastructure\\FinalProject.Infrastructure.csproj"
+            "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Infrastructure\\FinalProject.Infrastructure\\FinalProject.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Infrastructure\\FinalProject.Infrastructure\\FinalProject.Infrastructure.csproj"
             },
-            "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Infrastructure\\FinalProject.Persistence\\FinalProject.Persistence.csproj": {
-              "projectPath": "C:\\Users\\Hp\\Desktop\\Cavid\\FinalTask\\Infrastructure\\FinalProject.Persistence\\FinalProject.Persistence.csproj"
+            "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Infrastructure\\FinalProject.Persistence\\FinalProject.Persistence.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\CAVID\\Final\\FinalProject\\Infrastructure\\FinalProject.Persistence\\FinalProject.Persistence.csproj"
             }
           }
         }
