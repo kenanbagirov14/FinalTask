@@ -24,28 +24,46 @@ namespace FinalProject.Web.Areas.Admin.ServiceFacades
 
         public async Task<TeacherUpdateDTO> GetByIdAsync(int id)
         {
-           return await _serviceFacade.GetByIdAsync(id);
+            return await _serviceFacade.GetByIdAsync(id);
         }
 
         public async Task<int> AddAsync(TeacherAddDTO addModel)
         {
-            var filePaths = await addModel.File.SaveFileAsync(_env);
-            addModel.ImagaPath = filePaths.Item1;
-            addModel.ImagaFullPath = filePaths.Item2;
+            if (addModel.File != null)
+            {
+               var filePaths = await addModel.File.SaveFileAsync(_env);
+               addModel.ImagaPath = filePaths.Item1;
+               addModel.ImagaFullPath = filePaths.Item2;
+            }
+            if (addModel.FrontImage != null)
+            {
+                var frontImage = await addModel.FrontImage.SaveFileAsync(_env);
+                addModel.FrontImagaPath = frontImage.Item1;
+                addModel.FrontImagaFullPath = frontImage.Item2;
+            }
             return await _serviceFacade.AddAsync(addModel);
         }
 
         public async Task<int> UpdateAsync(TeacherUpdateDTO updateModel)
         {
-            var filePaths = await updateModel.File.SaveFileAsync(_env);
-            updateModel.ImagaPath = filePaths.Item1;
-            updateModel.ImagaFullPath = filePaths.Item2;
+            if (updateModel.File != null)
+            {
+                var filePaths = await updateModel.File.SaveFileAsync(_env);
+                updateModel.ImagaPath = filePaths.Item1;
+                updateModel.ImagaFullPath = filePaths.Item2;
+            }
+            if (updateModel.FrontImage != null)
+            {
+                var frontImage = await updateModel.FrontImage.SaveFileAsync(_env);
+                updateModel.FrontImagaPath = frontImage.Item1;
+                updateModel.FrontImagaFullPath = frontImage.Item2;
+            }
             return await _serviceFacade.UpdateAsync(updateModel);
         }
 
-        public async Task<int> DeleteByIdAsync(int id) 
+        public async Task<int> DeleteByIdAsync(int id)
         {
-           return await _serviceFacade.DeleteAsync(id);
+            return await _serviceFacade.DeleteAsync(id);
         }
 
         public TeacherAddDTO Initialize()

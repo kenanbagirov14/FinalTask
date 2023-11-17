@@ -75,6 +75,18 @@
                     <span asp-validation-for="@Model.PhoneNumber" class="text-danger"></span>
                 </div>
 
+                <div class="col-6">
+                    <span>About Tittle</span>
+                    <input type="text" name="AboutTittle" class="form-control" value="@Model.AboutTittle" />
+                    <span asp-validation-for="@Model.AboutTittle" class="text-danger"></span>
+                </div>
+
+                <div class="col-6">
+                    <span>About Image</span>
+                    <input type="file" name="AboutImage" class="form-control" value="@Model.AboutImage" />
+                    <span asp-validation-for="@Model.AboutImage" class="text-danger"></span>
+                </div>
+
                 <div class="col-12">
                     <span>About Text</span>
                     <span asp-validation-for="@Model.AboutText" class="text-danger"></span>

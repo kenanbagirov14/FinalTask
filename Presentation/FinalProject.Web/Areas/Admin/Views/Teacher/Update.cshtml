@@ -7,6 +7,8 @@
                 <input type="hidden" name="Id" class="form-control" value="@Model.Id" />                
                 <input type="hidden" name="ImagaFullPath" class="form-control" value="@Model.ImagaFullPath" />
                 <input type="hidden" name="ImagaPath" class="form-control" value="@Model.ImagaPath" />
+                <input type="hidden" name="FrontImagaFullPath" class="form-control" value="@Model.FrontImagaFullPath" />
+                <input type="hidden" name="FrontImagaPath" class="form-control" value="@Model.FrontImagaPath" />
                 <div class="col-6">
                     <span>Date</span>
                     <input type="text" name="Name" class="form-control" value="@Model.Name" />
@@ -32,11 +34,15 @@
                     <input type="file" name="File" class="form-control" value="@Model.File" />
                     <span asp-validation-for="@Model.File" class="text-danger"></span>
                 </div>
-
+                <div class="col-6">
+                    <span>Select Front Image</span>
+                    <input type="file" name="FrontImage" class="form-control" value="@Model.FrontImage" />
+                    <span asp-validation-for="@Model.FrontImage" class="text-danger"></span>
+                </div>
                 <div class="col-12">
                     <span>Descripption</span>
-                    <textarea name="File" class="form-control">@Model.Descripption</textarea>
-                    <span asp-validation-for="@Model.Descripption" class="text-danger"></span>
+                    <textarea name="Description" class="form-control">@Model.Description</textarea>
+                    <span asp-validation-for="@Model.Description" class="text-danger"></span>
                 </div>
 
                 <button type="submit" class="btn btn-primary mt-4">Submit</button>

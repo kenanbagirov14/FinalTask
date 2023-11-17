@@ -24,6 +24,9 @@ namespace FinalProject.Application.DTOs.General
         public string? PhoneNumber { get; set; }
         public string? Fax { get; set; }
         public string? AboutText { get; set; }
+        public string? AboutTittle { get; set; }
+        public string? AboutImagePath { get; set; }
+        public string? AboutFullImagePath { get; set; }
 
         public string? WhyUsImagePath { get; set; }
         public string? WhyUsFullImagePath { get; set; }
@@ -40,6 +43,7 @@ namespace FinalProject.Application.DTOs.General
         public string? WhyUsTittle2 { get; set; }
         public string? WhyUsText2 { get; set; }
 
+        public IFormFile? AboutImage { get; set; }
         public IFormFile? SlideImage { get; set; }
         public IFormFile? LogoImage { get; set; }
         public IFormFile? WhyUseImage { get; set; }

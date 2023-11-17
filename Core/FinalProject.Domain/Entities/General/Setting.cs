@@ -24,7 +24,6 @@ namespace FinalProject.Domain.Entities.General
         public string? Fax { get; set; }
         public string? AboutText { get; set; }
         public string? AboutTittle { get; set; }
-
         public string? AboutImagePath { get; set; }
         public string? AboutFullImagePath { get; set; }
 

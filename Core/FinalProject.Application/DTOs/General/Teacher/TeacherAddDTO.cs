@@ -15,7 +15,10 @@ namespace FinalProject.Application.DTOs.General
         public DateTime? BirthDate { get; set; }
         public string? ImagaPath { get; set; }
         public string? ImagaFullPath { get; set; }
-        public string? Descripption { get; set; }
+        public string? FrontImagaPath { get; set; }
+        public string? FrontImagaFullPath { get; set; }
+        public string? Description { get; set; }
         public IFormFile? File { get; set; }
+        public IFormFile? FrontImage { get; set; }
     }
 }

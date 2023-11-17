@@ -1,4 +1,6 @@
-﻿<section class="section contact" data-section="section6">
+﻿@model HomeViewModel
+
+<section class="section contact" data-section="section6">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -12,7 +14,7 @@
 
                             Please visit https://templatemo.com/contact page -->
 
-                <form asp-area="Admin" asp-controller="Message" asp-action="Create" method="post"  class="form-group">
+                <form asp-area="" asp-controller="Home" asp-action="CreateMessage" method="post" class="form-group">
 
                     <div class="row">
                         <div class="col-md-6">

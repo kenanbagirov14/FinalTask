@@ -30,6 +30,13 @@ namespace FinalProject.Web.Areas.Admin.ServiceFacades
             {
 
                 int result = 0;
+                if (addDto.AboutImage != null)
+                {
+                    var aboutImage = await addDto.AboutImage.SaveFileAsync(_env);
+                    addDto.AboutImagePath = aboutImage.Item1;
+                    addDto.AboutFullImagePath = aboutImage.Item2;
+                }
+
                 if (addDto.LogoImage != null)
                 {
                     var logoImagePath = await addDto.LogoImage.SaveFileAsync(_env);

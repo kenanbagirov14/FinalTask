@@ -26,17 +26,24 @@ namespace FinalProject.Web.Areas.Admin.ServiceFacades
 
         public async Task<int> AddAsync(StudentAddDTO addModel)
         {
-            var filePaths = await addModel.File.SaveFileAsync(_env);
-            addModel.ImagaPath = filePaths.Item1;
-            addModel.ImagaFullPath = filePaths.Item2;
+            if (addModel.File != null)
+            {
+                var filePaths = await addModel.File.SaveFileAsync(_env);
+                addModel.ImagaPath = filePaths.Item1;
+                addModel.ImagaFullPath = filePaths.Item2;
+            }
+
             return await _studentService.AddAsync(addModel);
         }
 
         public async Task<int> UpdateAsync(StudentUpdateDTO updateModel)
         {
-            var filePaths = await updateModel.File.SaveFileAsync(_env);
-            updateModel.ImagaPath = filePaths.Item1;
-            updateModel.ImagaFullPath = filePaths.Item2;
+            if (updateModel.File != null)
+            {
+                var filePaths = await updateModel.File.SaveFileAsync(_env);
+                updateModel.ImagaPath = filePaths.Item1;
+                updateModel.ImagaFullPath = filePaths.Item2;
+            }
             return await _studentService.UpdateAsync(updateModel);
         }
 

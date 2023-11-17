@@ -13,6 +13,7 @@ namespace FinalProject.Application.DTOs.General
         public int Experience { get; set; }
         public DateTime? BirthDate { get; set; }
         public string? ImagaPath { get; set; }
-        public string? Descripption { get; set; }
+        public string? FrontImagaPath { get; set; }
+        public string? Description { get; set; }
     }
 }

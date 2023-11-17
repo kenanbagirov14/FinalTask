@@ -1,4 +1,6 @@
-﻿using FinalProject.Web.Models;
+﻿using FinalProject.Web.Areas.Admin.ServiceFacades;
+using FinalProject.Web.Models;
+using FinalProject.Web.ServiceFacades;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,18 +8,35 @@ namespace FinalProject.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        //private readonly ILogger<HomeController> _logger;
+        private readonly HomeserviceFacade _homeserviceFacade;
+        public HomeController(ILogger<HomeController> logger, HomeserviceFacade homeserviceFacade)
         {
-            _logger = logger;
+            
+            _homeserviceFacade = homeserviceFacade;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var data = await _homeserviceFacade.InitializeModel();
+            return View(data);
         }
-        
+
+
+        [HttpPost]
+        public async Task<IActionResult> CreateMessage(MessageAddDTO addDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(addDto);
+            }
+            await _homeserviceFacade.AddMessage(addDto);
+            return RedirectToAction("Index");
+        }
+
+
+
+
         public IActionResult Privacy()
         {
             return View();

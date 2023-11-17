@@ -33,7 +33,7 @@ namespace FinalProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 11, 17, 4, 56, 2, 672, DateTimeKind.Local).AddTicks(426));
+                        .HasDefaultValue(new DateTime(2023, 11, 17, 13, 39, 8, 567, DateTimeKind.Local).AddTicks(2440));
 
                     b.Property<string>("GroupName")
                         .IsRequired()
@@ -70,7 +70,7 @@ namespace FinalProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 11, 17, 4, 56, 2, 671, DateTimeKind.Local).AddTicks(6262));
+                        .HasDefaultValue(new DateTime(2023, 11, 17, 13, 39, 8, 566, DateTimeKind.Local).AddTicks(7889));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -123,7 +123,7 @@ namespace FinalProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 11, 17, 4, 56, 2, 671, DateTimeKind.Local).AddTicks(8538));
+                        .HasDefaultValue(new DateTime(2023, 11, 17, 13, 39, 8, 567, DateTimeKind.Local).AddTicks(380));
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
@@ -222,7 +222,7 @@ namespace FinalProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 11, 17, 4, 56, 2, 672, DateTimeKind.Local).AddTicks(9509));
+                        .HasDefaultValue(new DateTime(2023, 11, 17, 13, 39, 8, 568, DateTimeKind.Local).AddTicks(3677));
 
                     b.Property<int>("GroupId")
                         .HasColumnType("int");
@@ -265,13 +265,19 @@ namespace FinalProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 11, 17, 4, 56, 2, 673, DateTimeKind.Local).AddTicks(1767));
+                        .HasDefaultValue(new DateTime(2023, 11, 17, 13, 39, 8, 568, DateTimeKind.Local).AddTicks(6496));
 
-                    b.Property<string>("Descripption")
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Experience")
                         .HasColumnType("int");
+
+                    b.Property<string>("FrontImagaFullPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FrontImagaPath")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagaFullPath")
                         .HasColumnType("nvarchar(max)");
@@ -306,7 +312,7 @@ namespace FinalProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 11, 17, 4, 56, 2, 672, DateTimeKind.Local).AddTicks(3015));
+                        .HasDefaultValue(new DateTime(2023, 11, 17, 13, 39, 8, 567, DateTimeKind.Local).AddTicks(5466));
 
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
@@ -331,7 +337,7 @@ namespace FinalProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 11, 17, 4, 56, 2, 672, DateTimeKind.Local).AddTicks(5368));
+                        .HasDefaultValue(new DateTime(2023, 11, 17, 13, 39, 8, 567, DateTimeKind.Local).AddTicks(8279));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -372,7 +378,7 @@ namespace FinalProject.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2023, 11, 17, 4, 56, 2, 672, DateTimeKind.Local).AddTicks(7768));
+                        .HasDefaultValue(new DateTime(2023, 11, 17, 13, 39, 8, 568, DateTimeKind.Local).AddTicks(1388));
 
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");

@@ -13,5 +13,7 @@ namespace FinalProject.Infrastructure.Repositories.Identity
         public UserRepository(FinalProjectDbContext dbContext) : base(dbContext)
         {
         }
+
+        public IQueryable<User> Users => _entities;
     }
 }
